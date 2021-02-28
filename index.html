@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet" alt=”black hole” style="width:400px;height:200px;">
+  
+  <title>Qalyn calculator</title>
+</head>
+
+<body>
+    <body background="https://img2.goodfon.com/wallpaper/nbig/6/7b/art-devushka-trava-gory-yurta.jpg"> 
+        <body style: background-position: fixed; background-repeat: no-repeat; background-size: 100%; background-overflow: hidden;> 
+            
+  <script type="text/javascript" src="script.js"> </script>
+<form>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-3"> </div>
+      <div class="col-lg-5 col-md-9" id="calculator">
+          <b>
+        <h1> <strong>QALYN CALCULATOR </strong></h1>
+
+       
+    <form name="Name"  onsubmit="return validateForm()" method="post">
+        <label for="Bride's name">Bride's name</label><br>
+        <select id = "Name">
+       <input type="text" name="fname">
+        </form>
+    </select> <br>
+        
+        <label for ="Bride's education">Bride's education:<label><br>
+            <select id= "Education level">
+          <option value="blank"></option>
+          <option value="bachelor">Bachelor degree</option>
+          <option value="college"> College degree</option>
+          <option value="high school">High school degree</option>
+          <option value="middle school">Middle school degree</option>
+            </select>
+            <br><br>
+
+        <label for= "Bride's family net worth">Bride's family net worth:</label> <br>
+        <select id = "Family networth">
+            <option value= "blank"></option>
+            <option value="Upper class">More than 100,000$</option>
+          <option value="Middle class">Between 50,000$ and 100,000$</option>
+          <option value="Lower class">Less than 50,000$</option>
+        </select>
+        <br><br>
+
+        <label for="Bride's skills">Bride's skills: </label>  <br>
+        <div id="chboxes" class="mmargin">
+            <input type="checkbox" id="skills1"  value="100" class="box">
+            <label for="3.1"> Playing on dombra </label><br>
+
+            <input type="checkbox" id="skills2"  value="200" class="box">
+            <label for="3.2"> Cooking good</label><br>
+  
+            <input type="checkbox" id="skills3" value="150" class="box">
+            <label for="3.3"> Easygoing character</label><br>
+  
+            <input type="checkbox" id="skills4"  value="100" class="box">
+            <label for="3.4"> Singing well</label><br>
+          </div>
+          <br>
+
+          <label for= "Bride's age">Bride's age: </label>  <br>
+          <div id="divAge" class="mmargin">
+            <input type="radio" id="age" value="1.5" class="box">
+            <label for="4.1">Between 18-23</label><br>
+
+            <input type="radio" id="age" value="1.2" class="box">
+            <label for="4.2">Between 24-27</label><br>
+
+            <input type="radio" id="age" value="0.95" class="box">
+            <label for="4.3">28+</label><br>
+          </div>
+          <br>
+
+          <label for="Bride's reputation">Bride's reputation: </label>
+          <br>
+          <input type="checkbox" id="reputation"  value="0.85" class="mmargin box" >
+          <label for="5.1"> Gossips about her parent's attitude </label><br>
+  
+          <input type="checkbox" id="reputation" value="0.9" class="mmargin box" >
+          <label for="5.2"> Gossips about her character</label><br>
+  
+          <input type="checkbox" id="reputation" value="-200" class="mmargin box" >
+          <label for="5.3"> General gossips around her person</label>
+          <br>
+          <br>
+          <textarea maxlength="50"> Love letter</textarea> <br>
+        </b>
+          <!--Calculate-->
+        </form>
+        <input type="button" value="Calculate Price" onclick="CalculatePrice();">
+        <br><br>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
